@@ -1,0 +1,32 @@
+service: INSERT_SERVICE_NAME
+
+provider:
+    name: google
+    stage: dev
+    runtime: nodejs14
+    region: INSERT_REGION
+    project: INSERT_PROJECT_ID
+    credentials: INSERT_PATH_TO_GCLOUD_CRED_FILE
+    environment:
+        box_primary_key: INSERT_BOX_PRIMARY_SEC_KEY
+        box_secondary_key: INSERT_BOX_SECOND_SEC_KEY
+        openai_sec_key: INSERT_OPEN_AI_SEC_KEY
+        box_api_endpoint: "https://dl.boxcloud.com/api/2.0/internal_files"
+        open_ai_model: "text-davinci-003"
+        max_document_tokens: "3800"
+
+plugins:
+    - serverless-google-cloudfunctions
+
+package:
+    exclude:
+        - node_modules/**
+        - .gitignore
+        - .git/**
+
+functions:
+    first:
+        handler: boxSkill
+        events:
+            - http: path
+
