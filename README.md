@@ -1,12 +1,11 @@
-# box-open-ai-skill-demo
+# OpenAI Box Skill Demo
 This repository contains an example GCP function that accepts a Box Skill invocation and calls the OpenAI TLDR service.
 
 **Note: You will need to add a gcp crendentials file and update the serverless.yml with that appropriate connection information.**
 
-You will need to set up a Box Skill in the Box Developer Console, as well as authorize the skill and configure a folder to watch for uploads. You can find out more about that process in our [developer documentation](https://developer.box.com/guides/applications/custom-skills/setup/). 
-
 ## Steps to Setup and Deploy
 
+0. You will need to set up a Box Skill in the Box Developer Console, as well as authorize the skill and configure a folder to watch for uploads. You can find out more about that process in our [developer documentation](https://developer.box.com/guides/applications/custom-skills/setup/). 
 1. Install Node v10.0.0 or higher
 2. [Set up a Google Cloud Account](https://serverless.com/framework/docs/providers/google/guide/credentials/)
 3. Download the code.
