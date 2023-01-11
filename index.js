@@ -21,8 +21,8 @@ const max_document_tokens = process.env.max_document_tokens;
 exports.boxSkill = async (request, response) => {      
     const filesReader = new FilesReader(request.body);
     const skillsWriter = new SkillsWriter(filesReader.getFileContext());
-    var text;
-    var encoded;
+    let text;
+    let encoded;
 
         try{
             const body = JSON.stringify(request.body);
