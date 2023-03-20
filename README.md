@@ -1,3 +1,7 @@
+<img src="images/box-dev-logo-clip.png" 
+alt= “box-dev-logo” 
+style="margin-left:-10px;"
+width=40%;>
 # OpenAI Box Skill Demo
 This repository contains an example GCP function that accepts a Box Skill invocation and calls the OpenAI TLDR service.
 
